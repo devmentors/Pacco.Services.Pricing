@@ -7,6 +7,16 @@
       <e p="appsettings.Development.json" t="Include" />
       <e p="appsettings.json" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
+      <e p="Commands" t="Include">
+        <e p="AddCustomerCompletedOrder.cs" t="Include" />
+        <e p="CreateCustomer.cs" t="Include" />
+        <e p="Handlers" t="Include">
+          <e p="AddCustomerCompletedOrderHandler.cs" t="Include" />
+          <e p="CreateCustomerHandler.cs" t="Include" />
+          <e p="MakeCustomerVipHandler.cs" t="Include" />
+        </e>
+        <e p="MakeCustomerVip.cs" t="Include" />
+      </e>
       <e p="Core" t="Include">
         <e p="Entities" t="Include">
           <e p="Customer.cs" t="Include" />
@@ -25,6 +35,17 @@
       </e>
       <e p="DTO" t="Include">
         <e p="OrderPricingDto.cs" t="Include" />
+      </e>
+      <e p="Events" t="Include">
+        <e p="Customers" t="Include">
+          <e p="CustomerCreated.cs" t="Include" />
+        </e>
+        <e p="Handlers" t="Include">
+          <e p="CustomerOrderHistoryHandler.cs" t="Include" />
+        </e>
+        <e p="Orders" t="Include">
+          <e p="OrderCompleted.cs" t="Include" />
+        </e>
       </e>
       <e p="IoC" t="Include">
         <e p="Extensions.cs" t="Include" />
@@ -58,7 +79,7 @@
         </e>
       </e>
       <e p="Sagas" t="Include">
-        <e p="ClientOrderHistorySaga.cs" t="Include" />
+        <e p="CustomerOrderHistorySaga.cs" t="Include" />
       </e>
     </e>
   </component>

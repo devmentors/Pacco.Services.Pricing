@@ -5,7 +5,7 @@ namespace Pacco.Services.Pricing.Mongo.Documents
     public static class Extensions
     {
         public static Customer AsEntity(this CustomerDocument document)
-            => new Customer(document.Id, document.IsVip, document.CompletedOrdersNumber);
+            => document is null? null : new Customer(document.Id, document.IsVip, document.CompletedOrdersNumber);
 
         public static CustomerDocument AsDocument(this Customer entity)
             => new CustomerDocument

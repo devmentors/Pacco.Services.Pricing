@@ -22,7 +22,7 @@ namespace Pacco.Services.Pricing.Core.Entities
         public void MakeVip()
             => IsVip = true;
 
-        public void IncrementCompletedOrdersNumber()
+        public void AddCompletedOrder()
             => CompletedOrdersNumber++;
     }
 }
