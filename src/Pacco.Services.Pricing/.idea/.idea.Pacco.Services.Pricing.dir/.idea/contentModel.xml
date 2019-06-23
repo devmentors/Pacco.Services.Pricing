@@ -7,8 +7,36 @@
       <e p="appsettings.Development.json" t="Include" />
       <e p="appsettings.json" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
+      <e p="Core" t="Include">
+        <e p="Entities" t="Include">
+          <e p="Customer.cs" t="Include" />
+        </e>
+        <e p="Exceptions" t="Include">
+          <e p="CustomerNotFoundException.cs" t="Include" />
+          <e p="ExceptionBase.cs" t="Include" />
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="ICustomersRepository.cs" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="CustomerDiscountsService.cs" t="Include" />
+          <e p="ICustomerDiscountsService.cs" t="Include" />
+        </e>
+      </e>
       <e p="DTO" t="Include">
         <e p="OrderPricingDto.cs" t="Include" />
+      </e>
+      <e p="IoC" t="Include">
+        <e p="Extensions.cs" t="Include" />
+      </e>
+      <e p="Mongo" t="Include">
+        <e p="Documents" t="Include">
+          <e p="CustomerDocument.cs" t="Include" />
+          <e p="Extensions.cs" t="Include" />
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="CustomersMongoRepository.cs" t="Include" />
+        </e>
       </e>
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">
@@ -25,6 +53,12 @@
       </e>
       <e p="Queries" t="Include">
         <e p="GetOrderPricing.cs" t="Include" />
+        <e p="Handlers" t="Include">
+          <e p="GetOrderPricingHandler.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Sagas" t="Include">
+        <e p="ClientOrderHistorySaga.cs" t="Include" />
       </e>
     </e>
   </component>

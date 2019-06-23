@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47dcb5a2-2f5f-4058-94c2-99bbd0f21d2d" name="Default Changelist" comment="" />
+    <list default="true" id="47dcb5a2-2f5f-4058-94c2-99bbd0f21d2d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/DTO/OrderPricingDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DTO/OrderPricingDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pacco.Services.Pricing.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pacco.Services.Pricing.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Queries/GetOrderPricing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Queries/GetOrderPricing.cs" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,25 +16,18 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Pacco.Services.Pricing.csproj">
+        <entry file="file://$PROJECT_DIR$/Queries/Handlers/GetOrderPricingHandler.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Program.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+            <state relative-caret-position="480">
+              <caret line="32" column="38" lean-forward="true" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
               <folding>
-                <marker date="1561300564387" expanded="false" signature="6:448" ph="..." />
-                <marker date="1561300564387" expanded="true" signature="482:1614" ph="{...}" />
-                <marker date="1561300564387" expanded="true" signature="509:1612" ph="{...}" />
-                <marker date="1561300564387" expanded="true" signature="1108:1549" ph="{...}" />
-                <marker date="1561300564387" expanded="true" signature="1217:1425" ph="{...}" />
+                <marker date="1561308396053" expanded="true" signature="6:228" ph="..." />
+                <marker date="1561308396053" expanded="true" signature="279:1327" ph="{...}" />
+                <marker date="1561308396053" expanded="true" signature="380:1325" ph="{...}" />
+                <marker date="1561308396053" expanded="true" signature="613:703" ph="{...}" />
+                <marker date="1561308396053" expanded="true" signature="783:1319" ph="{...}" />
+                <marker date="1561308396053" expanded="true" signature="901:1000" ph="{...}" />
+                <marker date="1561308396053" expanded="true" signature="1153:1308" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -38,12 +36,87 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Queries/GetOrderPricing.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            <state relative-caret-position="180">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
               <folding>
-                <marker date="1561300108648" expanded="true" signature="6:74" ph="..." />
-                <marker date="1561300108648" expanded="true" signature="116:233" ph="{...}" />
-                <marker date="1561300108648" expanded="true" signature="177:231" ph="{...}" />
+                <marker date="1561308373063" expanded="true" signature="6:74" ph="..." />
+                <marker date="1561308373063" expanded="true" signature="116:326" ph="{...}" />
+                <marker date="1561308373063" expanded="true" signature="177:324" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Sagas/ClientOrderHistorySaga.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+              <folding>
+                <marker date="1561308379535" expanded="true" signature="6:30" ph="..." />
+                <marker date="1561308379535" expanded="true" signature="70:315" ph="{...}" />
+                <marker date="1561308379535" expanded="true" signature="108:220" ph="{...}" />
+                <marker date="1561308379535" expanded="true" signature="292:313" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
+              <folding>
+                <marker date="1561308294944" expanded="false" signature="6:588" ph="..." />
+                <marker date="1561308294944" expanded="true" signature="622:1663" ph="{...}" />
+                <marker date="1561308294944" expanded="true" signature="649:1661" ph="{...}" />
+                <marker date="1561308294944" expanded="true" signature="1492:1599" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Core/Repositories/ICustomersRepository.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+              <folding>
+                <marker date="1561308309411" expanded="false" signature="6:87" ph="..." />
+                <marker date="1561308309411" expanded="true" signature="139:326" ph="{...}" />
+                <marker date="1561308309411" expanded="true" signature="183:324" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Core/Services/CustomerDiscountsService.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+              <folding>
+                <marker date="1561308396055" expanded="true" signature="91:893" ph="{...}" />
+                <marker date="1561308396055" expanded="true" signature="163:891" ph="{...}" />
+                <marker date="1561308396055" expanded="true" signature="257:885" ph="{...}" />
+                <marker date="1561308396055" expanded="true" signature="355:416" ph="{...}" />
+                <marker date="1561308396055" expanded="true" signature="512:574" ph="{...}" />
+                <marker date="1561308396055" expanded="true" signature="669:731" ph="{...}" />
+                <marker date="1561308396055" expanded="true" signature="764:826" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Core/Services/ICustomerDiscountsService.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <folding>
+                <marker date="1561308345809" expanded="true" signature="91:236" ph="{...}" />
+                <marker date="1561308345809" expanded="true" signature="140:234" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -55,8 +128,39 @@
             <state relative-caret-position="165">
               <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding>
-                <marker date="1561300084392" expanded="true" signature="51:316" ph="{...}" />
-                <marker date="1561300084392" expanded="true" signature="86:314" ph="{...}" />
+                <marker date="1561308278610" expanded="true" signature="51:320" ph="{...}" />
+                <marker date="1561308278610" expanded="true" signature="86:318" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mongo/Documents/CustomerDocument.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+              <folding>
+                <marker date="1561308309404" expanded="false" signature="6:33" ph="..." />
+                <marker date="1561308309404" expanded="true" signature="83:287" ph="{...}" />
+                <marker date="1561308309404" expanded="true" signature="141:285" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mongo/Repositories/CustomersMongoRepository.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+              <folding>
+                <marker date="1561308288208" expanded="false" signature="6:215" ph="..." />
+                <marker date="1561308288208" expanded="true" signature="268:1093" ph="{...}" />
+                <marker date="1561308288208" expanded="true" signature="335:1091" ph="{...}" />
+                <marker date="1561308288208" expanded="true" signature="610:729" ph="{...}" />
+                <marker date="1561308288208" expanded="true" signature="784:904" ph="{...}" />
+                <marker date="1561308288208" expanded="true" signature="962:1085" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -68,17 +172,47 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Queries/GetOrderPricing.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/DTO/OrderPricingDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Mongo/Documents/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Mongo/Documents/CustomerDocument.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IoC/Extensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Queries/Handlers/GetOrderPricingHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Services/CustomerDiscountsService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Services/ICustomerDiscountsService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Repositories/ICustomersRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Entities/Customer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Queries/GetOrderPricing.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Sagas/ClientOrderHistorySaga.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DTO/OrderPricingDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Exceptions/ExceptionBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Core/Exceptions/CustomerNotFoundException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Mongo/Repositories/CustomersMongoRepository.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Core/IClientsRepository.cs" />
+        <option value="$PROJECT_DIR$/Core/Repositories/IClientsRepository.cs" />
         <option value="$PROJECT_DIR$/Pacco.Services.Pricing.csproj" />
-        <option value="$PROJECT_DIR$/DTO/OrderPricingDto.cs" />
-        <option value="$PROJECT_DIR$/Queries/GetOrderPricing.cs" />
+        <option value="$PROJECT_DIR$/Core/Services/IClientDiscountsService.cs" />
+        <option value="$PROJECT_DIR$/Core/Services/ClientDiscountsService.cs" />
+        <option value="$PROJECT_DIR$/Core/Exceptions/ExceptionBase.cs" />
+        <option value="$PROJECT_DIR$/Core/Exceptions/ClientNotFoundException.cs" />
+        <option value="$PROJECT_DIR$/Mongo/Documents/ClientDocument.cs" />
+        <option value="$PROJECT_DIR$/Core/Entities/Client.cs" />
+        <option value="$PROJECT_DIR$/Mongo/Documents/Extensions.cs" />
+        <option value="$PROJECT_DIR$/Mongo/Repositories/ClientsMongoRepository.cs" />
+        <option value="$PROJECT_DIR$/IoC/Extensions.cs" />
         <option value="$PROJECT_DIR$/Program.cs" />
+        <option value="$PROJECT_DIR$/Core/Entities/Customer.cs" />
+        <option value="$PROJECT_DIR$/Core/Exceptions/CustomerNotFoundException.cs" />
+        <option value="$PROJECT_DIR$/Core/Repositories/ICustomersRepository.cs" />
+        <option value="$PROJECT_DIR$/DTO/OrderPricingDto.cs" />
+        <option value="$PROJECT_DIR$/Mongo/Documents/CustomerDocument.cs" />
+        <option value="$PROJECT_DIR$/Core/Services/ICustomerDiscountsService.cs" />
+        <option value="$PROJECT_DIR$/Queries/Handlers/GetOrderPricingHandler.cs" />
+        <option value="$PROJECT_DIR$/Queries/GetOrderPricing.cs" />
+        <option value="$PROJECT_DIR$/Sagas/ClientOrderHistorySaga.cs" />
       </list>
     </option>
   </component>
@@ -94,7 +228,9 @@
     <option name="width" value="1680" />
     <option name="height" value="1050" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -110,7 +246,68 @@
             <path>
               <item name="" type="784c90a0:SolutionExplorerRootNode" />
               <item name="Pacco.Services.Pricing" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Core" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Pacco.Services.Pricing" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Core" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Entities" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Pacco.Services.Pricing" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Core" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Exceptions" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Pacco.Services.Pricing" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Core" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Repositories" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Pacco.Services.Pricing" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Core" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Services" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Pacco.Services.Pricing" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="DTO" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Pacco.Services.Pricing" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="IoC" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Pacco.Services.Pricing" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Mongo" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Pacco.Services.Pricing" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Mongo" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Repositories" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Pacco.Services.Pricing" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Queries" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Pacco.Services.Pricing" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Queries" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Handlers" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Pacco.Services.Pricing" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Sagas" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
@@ -183,12 +380,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561297555041</updated>
-      <workItem from="1561297556340" duration="1985000" />
+      <workItem from="1561297556340" duration="7844000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1985000" />
+    <option name="totallyTimeSpent" value="7844000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -204,9 +401,9 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="NuGet" />
+      <window_info anchor="bottom" id="NuGet" weight="0.32959184" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
@@ -218,7 +415,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -248,8 +445,98 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Pacco.Services.Pricing.csproj">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="81" selection-start-line="17" selection-start-column="81" selection-end-line="17" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Exceptions/ExceptionBase.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <marker date="1561305449964" expanded="true" signature="63:261" ph="{...}" />
+            <marker date="1561305449964" expanded="true" signature="117:259" ph="{...}" />
+            <marker date="1561305449964" expanded="true" signature="233:253" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mongo/Documents/Extensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <folding>
+            <marker date="1561308288206" expanded="true" signature="93:583" ph="{...}" />
+            <marker date="1561308288206" expanded="true" signature="130:581" ph="{...}" />
+            <marker date="1561308288206" expanded="true" signature="420:574" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IoC/Extensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="55" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="55" />
+          <folding>
+            <marker date="1561308282551" expanded="true" signature="6:219" ph="..." />
+            <marker date="1561308282551" expanded="true" signature="257:682" ph="{...}" />
+            <marker date="1561308282551" expanded="true" signature="294:680" ph="{...}" />
+            <marker date="1561308282551" expanded="true" signature="385:674" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Entities/Customer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding>
+            <marker date="1561308214047" expanded="true" signature="61:692" ph="{...}" />
+            <marker date="1561308214047" expanded="true" signature="89:690" ph="{...}" />
+            <marker date="1561308214047" expanded="true" signature="291:332" ph="{...}" />
+            <marker date="1561308214047" expanded="true" signature="424:530" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Exceptions/CustomerNotFoundException.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding>
+            <marker date="1561308234436" expanded="true" signature="63:323" ph="{...}" />
+            <marker date="1561308234436" expanded="true" signature="124:321" ph="{...}" />
+            <marker date="1561308234436" expanded="true" signature="295:315" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Repositories/ICustomersRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding>
+            <marker date="1561308309411" expanded="false" signature="6:87" ph="..." />
+            <marker date="1561308309411" expanded="true" signature="139:326" ph="{...}" />
+            <marker date="1561308309411" expanded="true" signature="183:324" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Services/CustomerDiscountsService.cs">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <marker date="1561308396055" expanded="true" signature="91:893" ph="{...}" />
+            <marker date="1561308396055" expanded="true" signature="163:891" ph="{...}" />
+            <marker date="1561308396055" expanded="true" signature="257:885" ph="{...}" />
+            <marker date="1561308396055" expanded="true" signature="355:416" ph="{...}" />
+            <marker date="1561308396055" expanded="true" signature="512:574" ph="{...}" />
+            <marker date="1561308396055" expanded="true" signature="669:731" ph="{...}" />
+            <marker date="1561308396055" expanded="true" signature="764:826" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -258,34 +545,100 @@
         <state relative-caret-position="165">
           <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding>
-            <marker date="1561300084392" expanded="true" signature="51:316" ph="{...}" />
-            <marker date="1561300084392" expanded="true" signature="86:314" ph="{...}" />
+            <marker date="1561308278610" expanded="true" signature="51:320" ph="{...}" />
+            <marker date="1561308278610" expanded="true" signature="86:318" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mongo/Documents/CustomerDocument.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding>
+            <marker date="1561308309404" expanded="false" signature="6:33" ph="..." />
+            <marker date="1561308309404" expanded="true" signature="83:287" ph="{...}" />
+            <marker date="1561308309404" expanded="true" signature="141:285" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mongo/Repositories/CustomersMongoRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+          <folding>
+            <marker date="1561308288208" expanded="false" signature="6:215" ph="..." />
+            <marker date="1561308288208" expanded="true" signature="268:1093" ph="{...}" />
+            <marker date="1561308288208" expanded="true" signature="335:1091" ph="{...}" />
+            <marker date="1561308288208" expanded="true" signature="610:729" ph="{...}" />
+            <marker date="1561308288208" expanded="true" signature="784:904" ph="{...}" />
+            <marker date="1561308288208" expanded="true" signature="962:1085" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Services/ICustomerDiscountsService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <marker date="1561308345809" expanded="true" signature="91:236" ph="{...}" />
+            <marker date="1561308345809" expanded="true" signature="140:234" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Queries/Handlers/GetOrderPricingHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="38" lean-forward="true" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+          <folding>
+            <marker date="1561308396053" expanded="true" signature="6:228" ph="..." />
+            <marker date="1561308396053" expanded="true" signature="279:1327" ph="{...}" />
+            <marker date="1561308396053" expanded="true" signature="380:1325" ph="{...}" />
+            <marker date="1561308396053" expanded="true" signature="613:703" ph="{...}" />
+            <marker date="1561308396053" expanded="true" signature="783:1319" ph="{...}" />
+            <marker date="1561308396053" expanded="true" signature="901:1000" ph="{...}" />
+            <marker date="1561308396053" expanded="true" signature="1153:1308" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Queries/GetOrderPricing.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding>
-            <marker date="1561300108648" expanded="true" signature="6:74" ph="..." />
-            <marker date="1561300108648" expanded="true" signature="116:233" ph="{...}" />
-            <marker date="1561300108648" expanded="true" signature="177:231" ph="{...}" />
+            <marker date="1561308373063" expanded="true" signature="6:74" ph="..." />
+            <marker date="1561308373063" expanded="true" signature="116:326" ph="{...}" />
+            <marker date="1561308373063" expanded="true" signature="177:324" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+        <state relative-caret-position="105">
+          <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
           <folding>
-            <marker date="1561300564387" expanded="false" signature="6:448" ph="..." />
-            <marker date="1561300564387" expanded="true" signature="482:1614" ph="{...}" />
-            <marker date="1561300564387" expanded="true" signature="509:1612" ph="{...}" />
-            <marker date="1561300564387" expanded="true" signature="1108:1549" ph="{...}" />
-            <marker date="1561300564387" expanded="true" signature="1217:1425" ph="{...}" />
+            <marker date="1561308294944" expanded="false" signature="6:588" ph="..." />
+            <marker date="1561308294944" expanded="true" signature="622:1663" ph="{...}" />
+            <marker date="1561308294944" expanded="true" signature="649:1661" ph="{...}" />
+            <marker date="1561308294944" expanded="true" signature="1492:1599" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sagas/ClientOrderHistorySaga.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <marker date="1561308379535" expanded="true" signature="6:30" ph="..." />
+            <marker date="1561308379535" expanded="true" signature="70:315" ph="{...}" />
+            <marker date="1561308379535" expanded="true" signature="108:220" ph="{...}" />
+            <marker date="1561308379535" expanded="true" signature="292:313" ph="{...}" />
           </folding>
         </state>
       </provider>

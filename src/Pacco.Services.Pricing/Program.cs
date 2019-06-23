@@ -4,7 +4,9 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Convey;
+using Convey.CQRS.Events;
 using Convey.CQRS.Queries;
+using Convey.Persistence.MongoDB;
 using Convey.WebApi;
 using Convey.WebApi.CQRS;
 using Microsoft.AspNetCore;
@@ -13,6 +15,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Pacco.Services.Pricing.DTO;
+using Pacco.Services.Pricing.IoC;
+using Pacco.Services.Pricing.Mongo.Documents;
 using Pacco.Services.Pricing.Queries;
 
 namespace Pacco.Services.Pricing
@@ -23,22 +27,21 @@ namespace Pacco.Services.Pricing
             => await WebHost.CreateDefaultBuilder(args)
                 .ConfigureServices(services => services
                     .AddConvey()
-                    .AddWebApi())
+                    .AddWebApi()
+                    .RegisterComponents()
+                    .AddQueryHandlers()
+                    .AddEventHandlers()
+                    .AddInMemoryQueryDispatcher()
+                    .AddInMemoryEventDispatcher()
+                    .AddMongo()
+                    .AddMongoRepository<CustomerDocument, Guid>("Clients"))
                 .Configure(app => app
                     .UseEndpoints(endpoints => endpoints
-                        .Get("", ctx => ctx.Response.WriteAsync("Welcome to Pacco Pricing Service!"))
-                        .Get<GetOrderPricing, OrderPricingDto>("orders/{orderId}/pricing",
-                            (query, ctx) =>
-                            {
-                                ctx.Response.WriteJson(new OrderPricingDto
-                                {
-                                    OrderId = query.OrderId,
-                                    OrderPrice = query.OrderPrice,
-                                    ClientDiscount = 250
-                                });
-                                
-                                return Task.CompletedTask;
-                            })))
+                        .Get("", ctx => ctx.Response.WriteAsync("Welcome to Pacco Pricing Service!")))
+                    .UseDispatcherEndpoints(endpoints =>
+                    {
+                        endpoints.Get<GetOrderPricing, OrderPricingDto>("pricing");
+                    }))
                 .Build()
                 .RunAsync();
     }
