@@ -60,7 +60,6 @@ namespace Pacco.Services.Pricing.Sagas
             }
         }
 
-
         public Task CompensateAsync(CustomerCreated message, ISagaContext context)
             => Task.CompletedTask;
 
