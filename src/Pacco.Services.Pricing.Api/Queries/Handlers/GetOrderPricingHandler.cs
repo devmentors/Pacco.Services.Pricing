@@ -32,7 +32,6 @@ namespace Pacco.Services.Pricing.Api.Queries.Handlers
 
             return new OrderPricingDto
             {
-                OrderId = query.OrderId,
                 CustomerDiscount = customerDiscount,
                 OrderPrice = query.OrderPrice
             };

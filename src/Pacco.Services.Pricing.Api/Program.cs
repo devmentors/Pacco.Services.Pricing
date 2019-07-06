@@ -1,17 +1,12 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Convey;
-using Convey.CQRS.Commands;
-using Convey.CQRS.Events;
-using Convey.CQRS.Queries;
-using Convey.Persistence.MongoDB;
+using Convey.Logging;
 using Convey.WebApi;
 using Convey.WebApi.CQRS;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Pacco.Services.Pricing.Api.DTO;
-using Pacco.Services.Pricing.Api.Mongo.Documents;
 using Pacco.Services.Pricing.Api.Queries;
 using Pacco.Services.Pricing.Api.IoC;
 
@@ -24,22 +19,15 @@ namespace Pacco.Services.Pricing.Api
                 .ConfigureServices(services => services
                     .AddConvey()
                     .AddWebApi()
-                    .RegisterComponents()
-                    .AddQueryHandlers()
-                    .AddCommandHandlers()
-                    .AddEventHandlers()
-                    .AddInMemoryQueryDispatcher()
-                    .AddInMemoryCommandDispatcher()
-                    .AddInMemoryEventDispatcher()
-                    .AddMongo()
-                    .AddMongoRepository<CustomerDocument, Guid>("Clients"))
+                    .AddInfrastructure()
+                    .Build())
                 .Configure(app => app
-                    .UseEndpoints(endpoints => endpoints
-                        .Get("", ctx => ctx.Response.WriteAsync("Welcome to Pacco Pricing Service!")))
-                    .UseDispatcherEndpoints(endpoints =>
-                    {
-                        endpoints.Get<GetOrderPricing, OrderPricingDto>("pricing");
-                    }))
+                    .UseInfrastructure()
+                    .UseDispatcherEndpoints(endpoints => endpoints
+                        .Get("", ctx => ctx.Response.WriteAsync("Welcome to Pacco Pricing Service!"))
+                        .Get<GetOrderPricing, OrderPricingDto>("pricing")
+                    ))
+                .UseLogging()
                 .Build()
                 .RunAsync();
     }

@@ -1,6 +1,5 @@
 using System;
 using Convey.CQRS.Events;
-using Newtonsoft.Json;
 
 namespace Pacco.Services.Pricing.Api.Events.Orders
 {
@@ -9,7 +8,6 @@ namespace Pacco.Services.Pricing.Api.Events.Orders
         public Guid Id { get; }
         public Guid CustomerId { get; }
 
-        [JsonConstructor]
         public OrderCompleted(Guid id, Guid customerId)
         {
             Id = id;
