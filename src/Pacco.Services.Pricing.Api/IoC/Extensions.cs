@@ -40,7 +40,8 @@ namespace Pacco.Services.Pricing.Api.IoC
                 .AddMongoRepository<CustomerDocument, Guid>("Clients")
                 .AddHttpClient()
                 .AddConsul()
-                .AddFabio();
+                .AddFabio()
+                .AddRabbitMq();
         }
         
         public static IApplicationBuilder UseInfrastructure(this IApplicationBuilder app)
