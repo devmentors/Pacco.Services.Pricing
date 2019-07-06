@@ -4,6 +4,6 @@ namespace Pacco.Services.Pricing.Api.Core.Services
 {
     public interface ICustomerDiscountsService
     {
-        decimal CalculateCustomerDiscount(Customer customer, decimal orderPrice);
+        decimal CalculateDiscount(Customer customer);
     }
 }

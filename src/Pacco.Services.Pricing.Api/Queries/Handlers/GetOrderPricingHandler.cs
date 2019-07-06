@@ -28,7 +28,7 @@ namespace Pacco.Services.Pricing.Api.Queries.Handlers
                 throw new CustomerNotFoundException(query.CustomerId);
             }
 
-            var customerDiscount = _service.CalculateCustomerDiscount(customer, query.OrderPrice);
+            var customerDiscount = _service.CalculateDiscount(customer);
 
             return new OrderPricingDto
             {

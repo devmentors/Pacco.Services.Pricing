@@ -16,6 +16,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Pacco.Services.Pricing.Api.Core.Repositories;
 using Pacco.Services.Pricing.Api.Core.Services;
 using Pacco.Services.Pricing.Api.Events.Customers;
+using Pacco.Services.Pricing.Api.Events.Orders;
 using Pacco.Services.Pricing.Api.Mongo.Documents;
 using Pacco.Services.Pricing.Api.Mongo.Repositories;
 
@@ -50,7 +51,8 @@ namespace Pacco.Services.Pricing.Api.IoC
                 .UseInitializers()
                 .UseConsul()
                 .UseRabbitMq()
-                .SubscribeEvent<CustomerCreated>();
+                .SubscribeEvent<CustomerCreated>()
+                .SubscribeEvent<OrderCompleted>();
 
             return app;
         }

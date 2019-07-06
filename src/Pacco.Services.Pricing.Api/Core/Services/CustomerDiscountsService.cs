@@ -4,7 +4,7 @@ namespace Pacco.Services.Pricing.Api.Core.Services
 {
     public class CustomerDiscountsService : ICustomerDiscountsService
     {
-        public decimal CalculateCustomerDiscount(Customer customer, decimal orderPrice)
+        public decimal CalculateDiscount(Customer customer)
         {
             var discount = 0.0m;
 
@@ -26,7 +26,7 @@ namespace Pacco.Services.Pricing.Api.Core.Services
                 discount += 0.1m;
             }
 
-            return orderPrice * (1 - discount);
+            return discount;
         }
     }
 }
