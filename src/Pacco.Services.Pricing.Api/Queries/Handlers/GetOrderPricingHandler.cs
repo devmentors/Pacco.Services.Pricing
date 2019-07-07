@@ -1,34 +1,33 @@
 using System.Threading.Tasks;
 using Convey.CQRS.Queries;
-using Pacco.Services.Pricing.Api.Core.Exceptions;
-using Pacco.Services.Pricing.Api.Core.Repositories;
-using Pacco.Services.Pricing.Api.Core.Services;
-using Pacco.Services.Pricing.Api.DTO;
+using Pacco.Services.Pricing.Core.Services;
+using Pacco.Services.Pricing.DTO;
+using Pacco.Services.Pricing.Exceptions;
+using Pacco.Services.Pricing.Services.Clients;
 
-namespace Pacco.Services.Pricing.Api.Queries.Handlers
+namespace Pacco.Services.Pricing.Queries.Handlers
 {
     internal sealed class GetOrderPricingHandler : IQueryHandler<GetOrderPricing, OrderPricingDto>
     {
-        private readonly ICustomersRepository _repository;
+        private readonly ICustomersServiceClient _client;
         private readonly ICustomerDiscountsService _service;
 
-        public GetOrderPricingHandler(ICustomersRepository repository, ICustomerDiscountsService service)
+        public GetOrderPricingHandler(ICustomersServiceClient client, ICustomerDiscountsService service)
         {
-            _repository = repository;
+            _client = client;
             _service = service;
         }
 
-
         public async Task<OrderPricingDto> HandleAsync(GetOrderPricing query)
         {
-            var customer = await _repository.GetAsync(query.CustomerId);
+            var customer = await _client.GetAsync(query.CustomerId);
 
             if (customer is null)
             {
                 throw new CustomerNotFoundException(query.CustomerId);
             }
 
-            var customerDiscount = _service.CalculateDiscount(customer);
+            var customerDiscount = _service.CalculateDiscount(customer.AsEntity());
 
             return new OrderPricingDto
             {

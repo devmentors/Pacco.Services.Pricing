@@ -1,8 +1,8 @@
 using System;
 using Convey.CQRS.Queries;
-using Pacco.Services.Pricing.Api.DTO;
+using Pacco.Services.Pricing.DTO;
 
-namespace Pacco.Services.Pricing.Api.Queries
+namespace Pacco.Services.Pricing.Queries
 {
     public class GetOrderPricing : IQuery<OrderPricingDto>
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace Pacco.Services.Pricing.Api.Core.Exceptions
+namespace Pacco.Services.Pricing.Exceptions
 {
     public abstract class ExceptionBase : Exception
     {
