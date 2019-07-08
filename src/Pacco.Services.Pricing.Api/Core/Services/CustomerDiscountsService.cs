@@ -1,6 +1,6 @@
-using Pacco.Services.Pricing.Core.Entities;
+using Pacco.Services.Pricing.Api.Core.Entities;
 
-namespace Pacco.Services.Pricing.Core.Services
+namespace Pacco.Services.Pricing.Api.Core.Services
 {
     public class CustomerDiscountsService : ICustomerDiscountsService
     {

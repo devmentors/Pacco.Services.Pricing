@@ -6,11 +6,11 @@ using Convey.WebApi.CQRS;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Pacco.Services.Pricing.DTO;
-using Pacco.Services.Pricing.IoC;
-using Pacco.Services.Pricing.Queries;
+using Pacco.Services.Pricing.Api.DTO;
+using Pacco.Services.Pricing.Api.IoC;
+using Pacco.Services.Pricing.Api.Queries;
 
-namespace Pacco.Services.Pricing
+namespace Pacco.Services.Pricing.Api
 {
     public class Program
     {

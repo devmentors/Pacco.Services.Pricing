@@ -1,11 +1,11 @@
 using System.Threading.Tasks;
 using Convey.CQRS.Queries;
-using Pacco.Services.Pricing.Core.Services;
-using Pacco.Services.Pricing.DTO;
-using Pacco.Services.Pricing.Exceptions;
-using Pacco.Services.Pricing.Services.Clients;
+using Pacco.Services.Pricing.Api.Core.Services;
+using Pacco.Services.Pricing.Api.DTO;
+using Pacco.Services.Pricing.Api.Exceptions;
+using Pacco.Services.Pricing.Api.Services.Clients;
 
-namespace Pacco.Services.Pricing.Queries.Handlers
+namespace Pacco.Services.Pricing.Api.Queries.Handlers
 {
     internal sealed class GetOrderPricingHandler : IQueryHandler<GetOrderPricing, OrderPricingDto>
     {

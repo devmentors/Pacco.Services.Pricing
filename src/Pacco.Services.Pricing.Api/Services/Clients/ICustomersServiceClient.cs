@@ -1,8 +1,8 @@
 using System;
 using System.Threading.Tasks;
-using Pacco.Services.Pricing.DTO;
+using Pacco.Services.Pricing.Api.DTO;
 
-namespace Pacco.Services.Pricing.Services.Clients
+namespace Pacco.Services.Pricing.Api.Services.Clients
 {
     public interface ICustomersServiceClient
     {

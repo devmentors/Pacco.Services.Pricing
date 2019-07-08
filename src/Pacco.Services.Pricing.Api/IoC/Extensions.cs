@@ -6,10 +6,10 @@ using Convey.LoadBalancing.Fabio;
 using Convey.WebApi;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
-using Pacco.Services.Pricing.Core.Services;
-using Pacco.Services.Pricing.Services.Clients;
+using Pacco.Services.Pricing.Api.Core.Services;
+using Pacco.Services.Pricing.Api.Services.Clients;
 
-namespace Pacco.Services.Pricing.IoC
+namespace Pacco.Services.Pricing.Api.IoC
 {
     public static class Extensions
     {

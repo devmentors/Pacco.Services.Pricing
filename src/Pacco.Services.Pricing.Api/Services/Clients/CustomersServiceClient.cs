@@ -1,9 +1,9 @@
 using System;
 using System.Threading.Tasks;
 using Convey.HTTP;
-using Pacco.Services.Pricing.DTO;
+using Pacco.Services.Pricing.Api.DTO;
 
-namespace Pacco.Services.Pricing.Services.Clients
+namespace Pacco.Services.Pricing.Api.Services.Clients
 {
     internal sealed class CustomersServiceClient : ICustomersServiceClient
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace Pacco.Services.Pricing.Core.Entities
+namespace Pacco.Services.Pricing.Api.Core.Entities
 {
     public class Customer
     {
