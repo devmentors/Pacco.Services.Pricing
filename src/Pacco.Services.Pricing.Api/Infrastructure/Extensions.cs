@@ -1,8 +1,11 @@
 using Convey;
+using Convey.Configurations.Vault;
 using Convey.CQRS.Queries;
 using Convey.Discovery.Consul;
 using Convey.HTTP;
 using Convey.LoadBalancing.Fabio;
+using Convey.Metrics.AppMetrics;
+using Convey.Tracing.Jaeger;
 using Convey.WebApi;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
@@ -23,14 +26,19 @@ namespace Pacco.Services.Pricing.Api.IoC
                 .AddInMemoryQueryDispatcher()
                 .AddHttpClient()
                 .AddConsul()
-                .AddFabio();
+                .AddFabio()
+                .AddMetrics()
+                .AddJaeger()
+                .AddVault();
         }
         
         public static IApplicationBuilder UseInfrastructure(this IApplicationBuilder app)
         {
             app.UseErrorHandler()
+                .UseVault()
                 .UseInitializers()
-                .UseConsul();
+                .UseConsul()
+                .UseMetrics();
 
             return app;
         }
