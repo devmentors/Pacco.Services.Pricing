@@ -36,6 +36,7 @@ namespace Pacco.Services.Pricing.Api.IoC
         {
             app.UseErrorHandler()
                 .UseVault()
+                .UseJaeger()
                 .UseInitializers()
                 .UseConsul()
                 .UseMetrics();

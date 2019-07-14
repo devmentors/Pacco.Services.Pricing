@@ -18,5 +18,6 @@
     <PackageReference Include="Convey.Tracing.Jaeger" Version="0.0.*" />
     <PackageReference Include="Convey.Tracing.Jaeger.RabbitMQ" Version="0.0.*" />
     <PackageReference Include="Convey.WebApi.CQRS" Version="0.0.*" />
+    <PackageReference Include="OpenTracing.Contrib.NetCore" Version="0.6.0" />
   </ItemGroup>
 </Project>
