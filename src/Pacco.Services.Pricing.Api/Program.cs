@@ -1,6 +1,8 @@
 ﻿using System.Threading.Tasks;
 using Convey;
+using Convey.Configurations.Vault;
 using Convey.Logging;
+using Convey.Types;
 using Convey.WebApi;
 using Convey.WebApi.CQRS;
 using Microsoft.AspNetCore;
@@ -26,10 +28,11 @@ namespace Pacco.Services.Pricing.Api
                 .Configure(app => app
                     .UseInfrastructure()
                     .UseDispatcherEndpoints(endpoints => endpoints
-                        .Get("", ctx => ctx.Response.WriteAsync("Welcome to Pacco Pricing Service!"))
+                        .Get("", ctx => ctx.Response.WriteAsync(ctx.RequestServices.GetService<AppOptions>().Name))
                         .Get<GetOrderPricing, OrderPricingDto>("pricing")
                     ))
                 .UseLogging()
+                .UseVault()
                 .Build()
                 .RunAsync();
     }
