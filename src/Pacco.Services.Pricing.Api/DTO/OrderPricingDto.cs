@@ -4,8 +4,6 @@ namespace Pacco.Services.Pricing.Api.DTO
     {
         public decimal OrderPrice { get; set; }
         public decimal CustomerDiscount { get; set; }
-        public decimal OrderDiscountPrice => OrderPrice - (CustomerDiscount * OrderPrice) > 0
-            ? OrderPrice - (CustomerDiscount * OrderPrice)
-            : 1;
+        public decimal OrderDiscountPrice { get; set; }
     }
 }

@@ -11,7 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Pacco.Services.Pricing.Api.Core.Services;
 using Pacco.Services.Pricing.Api.Services.Clients;
 
-namespace Pacco.Services.Pricing.Api.IoC
+namespace Pacco.Services.Pricing.Api.Infrastructure
 {
     public static class Extensions
     {

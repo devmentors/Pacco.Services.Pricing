@@ -28,11 +28,13 @@ namespace Pacco.Services.Pricing.Api.Queries.Handlers
             }
 
             var customerDiscount = _service.CalculateDiscount(customer.AsEntity());
+            var orderDiscountPrice = query.OrderPrice - (customerDiscount * query.OrderPrice);
 
             return new OrderPricingDto
             {
                 CustomerDiscount = customerDiscount,
-                OrderPrice = query.OrderPrice
+                OrderPrice = query.OrderPrice,
+                OrderDiscountPrice = orderDiscountPrice > 0 ? orderDiscountPrice : query.OrderPrice
             };
         }
     }

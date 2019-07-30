@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Pacco.Services.Pricing.Api.DTO;
-using Pacco.Services.Pricing.Api.IoC;
+using Pacco.Services.Pricing.Api.Infrastructure;
 using Pacco.Services.Pricing.Api.Queries;
 
 namespace Pacco.Services.Pricing.Api
@@ -29,8 +29,7 @@ namespace Pacco.Services.Pricing.Api
                     .UseInfrastructure()
                     .UseDispatcherEndpoints(endpoints => endpoints
                         .Get("", ctx => ctx.Response.WriteAsync(ctx.RequestServices.GetService<AppOptions>().Name))
-                        .Get<GetOrderPricing, OrderPricingDto>("pricing")
-                    ))
+                        .Get<GetOrderPricing, OrderPricingDto>("pricing")))
                 .UseLogging()
                 .UseVault()
                 .Build()
