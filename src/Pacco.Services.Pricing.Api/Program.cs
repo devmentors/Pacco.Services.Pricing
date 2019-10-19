@@ -8,6 +8,7 @@ using Convey.WebApi.CQRS;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.Extensions.DependencyInjection;
 using Pacco.Services.Pricing.Api.DTO;
 using Pacco.Services.Pricing.Api.Infrastructure;
@@ -20,6 +21,7 @@ namespace Pacco.Services.Pricing.Api
         public static async Task Main(string[] args)
             => await WebHost.CreateDefaultBuilder(args)
                 .ConfigureServices(services => services
+                    .Configure<KestrelServerOptions>(options => { options.AllowSynchronousIO = true; })
                     .AddOpenTracing()
                     .AddConvey()
                     .AddWebApi()
