@@ -35,7 +35,6 @@ namespace Pacco.Services.Pricing.Api.Infrastructure
             app.UseErrorHandler()
                 .UseJaeger()
                 .UseInitializers()
-                .UseConsul()
                 .UseMetrics();
 
             return app;

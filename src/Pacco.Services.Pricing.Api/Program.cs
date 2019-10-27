@@ -21,7 +21,6 @@ namespace Pacco.Services.Pricing.Api
         public static async Task Main(string[] args)
             => await WebHost.CreateDefaultBuilder(args)
                 .ConfigureServices(services => services
-                    .Configure<KestrelServerOptions>(options => { options.AllowSynchronousIO = true; })
                     .AddOpenTracing()
                     .AddConvey()
                     .AddWebApi()
