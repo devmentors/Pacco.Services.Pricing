@@ -39,7 +39,7 @@ namespace Pacco.Services.Pricing.Api.Infrastructure
             app.UseErrorHandler()
                 .UseSwaggerDocs()
                 .UseJaeger()
-                .UseInitializers()
+                .UseConvey()
                 .UseMetrics();
 
             return app;

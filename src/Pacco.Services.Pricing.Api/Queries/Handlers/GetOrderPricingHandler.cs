@@ -32,7 +32,7 @@ namespace Pacco.Services.Pricing.Api.Queries.Handlers
             }
 
             var customerDiscount = _service.CalculateDiscount(customer.AsEntity());
-            var orderDiscountPrice = query.OrderPrice - (customerDiscount * query.OrderPrice);
+            var orderDiscountPrice = query.OrderPrice - customerDiscount * query.OrderPrice;
             
             _logger.LogInformation($"Calculated the pricing for the customer with id: {query.CustomerId}, " +
                                    $"base order price: {query.OrderPrice} $, discount: {customerDiscount} $, " +
