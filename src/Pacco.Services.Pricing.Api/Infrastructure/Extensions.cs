@@ -19,7 +19,6 @@ namespace Pacco.Services.Pricing.Api.Infrastructure
     {
         public static IConveyBuilder AddInfrastructure(this IConveyBuilder builder)
         {
-            builder.Services.AddOpenTracing();
             builder.Services.AddTransient<ICustomersServiceClient, CustomersServiceClient>();
             builder.Services.AddTransient<ICustomerDiscountsService, CustomerDiscountsService>();
 
