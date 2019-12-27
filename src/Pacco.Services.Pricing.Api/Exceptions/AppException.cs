@@ -2,11 +2,11 @@ using System;
 
 namespace Pacco.Services.Pricing.Api.Exceptions
 {
-    public abstract class ExceptionBase : Exception
+    public abstract class AppException : Exception
     {
         public abstract string Code { get; }
 
-        protected ExceptionBase(string message) : base(message)
+        protected AppException(string message) : base(message)
         {
         }
     }

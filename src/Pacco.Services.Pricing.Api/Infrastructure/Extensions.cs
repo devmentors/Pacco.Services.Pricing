@@ -11,6 +11,7 @@ using Convey.WebApi.Swagger;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Pacco.Services.Pricing.Api.Core.Services;
+using Pacco.Services.Pricing.Api.Exceptions;
 using Pacco.Services.Pricing.Api.Services.Clients;
 
 namespace Pacco.Services.Pricing.Api.Infrastructure
@@ -23,6 +24,7 @@ namespace Pacco.Services.Pricing.Api.Infrastructure
             builder.Services.AddTransient<ICustomerDiscountsService, CustomerDiscountsService>();
 
             return builder
+                .AddErrorHandler<ExceptionToResponseMapper>()
                 .AddQueryHandlers()
                 .AddInMemoryQueryDispatcher()
                 .AddHttpClient()

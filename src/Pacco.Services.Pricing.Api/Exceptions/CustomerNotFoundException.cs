@@ -2,7 +2,7 @@ using System;
 
 namespace Pacco.Services.Pricing.Api.Exceptions
 {
-    public class CustomerNotFoundException : ExceptionBase
+    public class CustomerNotFoundException : AppException
     {
         public override string Code => "customer_not_found";
 
