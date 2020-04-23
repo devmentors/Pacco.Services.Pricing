@@ -20,4 +20,9 @@
     <PackageReference Include="Convey.WebApi.CQRS" Version="0.4.*" />
     <PackageReference Include="Convey.WebApi.Swagger" Version="0.4.*" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="certs\**" CopyToPublishDirectory="Always"/>
+  </ItemGroup>
+  
 </Project>
