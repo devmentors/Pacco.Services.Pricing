@@ -5,6 +5,7 @@ using Convey.Docs.Swagger;
 using Convey.HTTP;
 using Convey.LoadBalancing.Fabio;
 using Convey.Metrics.AppMetrics;
+using Convey.Security;
 using Convey.Tracing.Jaeger;
 using Convey.WebApi;
 using Convey.WebApi.Swagger;
@@ -32,7 +33,8 @@ namespace Pacco.Services.Pricing.Api.Infrastructure
                 .AddFabio()
                 .AddMetrics()
                 .AddJaeger()
-                .AddWebApiSwaggerDocs();
+                .AddWebApiSwaggerDocs()
+                .AddSecurity();
         }
         
         public static IApplicationBuilder UseInfrastructure(this IApplicationBuilder app)
